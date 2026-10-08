@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mustafa Emir Kavçakar | Energy Systems Engineering</title>
+<meta name="description" content="Portfolio of Mustafa Emir Kavçakar: energy systems engineering student working on cogeneration, EV charging, CFD and 3D printing.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75..125,400..800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#eef1ee; --ink:#18242c; --muted:#56656d; --line:#c9d1cd;
+  --hot:#c8431b; --cold:#1f6aa5; --card:#ffffff;
+}
+@media (prefers-color-scheme:dark){
+  :root{--paper:#141b20;--ink:#e6ecea;--muted:#9aaab1;--line:#2c3a42;--hot:#ef6a3e;--cold:#5aa3dc;--card:#1b242a}
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:Archivo,system-ui,sans-serif;font-size:17px;line-height:1.55}
+a{color:var(--cold)}
+a:focus-visible{outline:2px solid var(--hot);outline-offset:2px}
+.wrap{max-width:860px;margin:0 auto;padding:0 20px}
+
+/* the one bold element: a hot-to-cold cross-flow stripe */
+.flow{height:10px;background:
+  linear-gradient(90deg,var(--hot),transparent 70%),
+  linear-gradient(180deg,transparent,var(--cold));}
+
+header{padding:56px 0 40px}
+h1{font-stretch:118%;font-weight:800;font-size:clamp(2.2rem,7vw,3.6rem);line-height:1.02;margin:0 0 14px;letter-spacing:-.01em}
+.role{font-size:1.15rem;color:var(--muted);margin:0 0 22px;max-width:60ch}
+.links{display:flex;flex-wrap:wrap;gap:10px}
+.btn{display:inline-block;padding:9px 16px;border:1.5px solid var(--ink);border-radius:999px;color:var(--ink);text-decoration:none;font-weight:600;font-size:.95rem}
+.btn.primary{background:var(--ink);color:var(--paper)}
+
+nav{position:sticky;top:0;background:var(--paper);border-bottom:1px solid var(--line);z-index:5}
+nav .wrap{display:flex;gap:20px;overflow-x:auto;padding-top:12px;padding-bottom:12px}
+nav a{color:var(--muted);text-decoration:none;font-weight:600;white-space:nowrap;font-size:.95rem}
+nav a:hover{color:var(--ink)}
+
+section{padding:44px 0 8px}
+h2{font-stretch:110%;font-size:1.6rem;margin:0 0 20px;font-weight:750}
+h3{font-size:1.1rem;margin:0 0 2px}
+.when{color:var(--muted);font-size:.93rem;margin:0 0 10px}
+ul{padding-left:20px;margin:8px 0 0}
+li{margin:4px 0}
+
+.entry{padding:18px 0 22px;border-top:1px solid var(--line)}
+.entry:first-of-type{border-top:0;padding-top:0}
+
+.projects{display:grid;gap:22px}
+.project{background:var(--card);border-radius:14px;overflow:hidden;border:1px solid var(--line)}
+.project .media img,.project .media video{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;background:var(--line)}
+.project .media iframe{display:block;width:100%;aspect-ratio:16/9;border:0}
+.project .body{padding:18px 20px 20px}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
+.tag{font-size:.82rem;padding:3px 10px;border-radius:999px;background:var(--paper);color:var(--muted)}
+.gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:8px;padding:0 20px 20px}
+.gallery img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:8px}
+
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px}
+.skills p{margin:4px 0 0;color:var(--muted)}
+
+footer{margin-top:56px;padding:28px 0 40px;border-top:1px solid var(--line);color:var(--muted);font-size:.92rem}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="flow" aria-hidden="true"></div>
+
+<header class="wrap">
+  <h1>Mustafa Emir<br>Kavçakar</h1>
+  <p class="role">Energy systems engineering student at Yaşar University. I work where power plants, power electronics and making things meet: cogeneration, EV charging, CFD and 3D printing.</p>
+  <div class="links">
+    <a class="btn primary" href="cv.pdf" download>Download CV</a>
+    <a class="btn" href="mailto:kavcakar@hotmail.com">Email</a>
+    <a class="btn" href="https://github.com/KULLANICIADI">GitHub</a>
+    <a class="btn" href="https://3dmeka.com">MeKa 3D</a>
+  </div>
+</header>
+
+<nav aria-label="Sections"><div class="wrap">
+  <a href="#education">Education</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#contact">Contact</a>
+</div></nav>
+
+<main class="wrap">
+
+<section id="education">
+  <h2>Education</h2>
+  <div class="entry">
+    <h3>B.Sc. Energy Systems Engineering</h3>
+    <p class="when">Yaşar University, İzmir · 2023 – 2026</p>
+    <p>Relevant courses: Power Conversion Systems, Engineering Project Management, Thermodynamics, Electromechanics, Generative AI for Engineers.</p>
+  </div>
+</section>
+
+<section id="experience">
+  <h2>Experience</h2>
+  <div class="entry">
+    <h3>Engineering Intern, Desa Elektrik Üretim A.Ş. (Yaşar Holding)</h3>
+    <p class="when">Cogeneration plant, İzmir · Summer 2026</p>
+    <ul>
+      <li>Supported operation of Solar Taurus 60 gas turbines and HRSG/boiler systems.</li>
+      <li>Took part in commissioning a 22 kW three-phase EV charging station and troubleshot OCPP 1.6 connectivity over LTE.</li>
+      <li>Participated in diesel generator testing and worked with MCCB panels, current transformers and field instruments (Siemens, Endress+Hauser).</li>
+    </ul>
+  </div>
+  <div class="entry">
+    <h3>Founder, MeKa 3D</h3>
+    <p class="when">İzmir · Present</p>
+    <ul>
+      <li>Sculpt and produce multicolor FDM-printed figures and objects.</li>
+      <li>Built the 3dmeka.com storefront with Shopier payments and Google Merchant Center listing.</li>
+    </ul>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="projects">
+
+    <article class="project">
+      <div class="media"><img src="images/heat-exchanger.jpg" alt="CFD temperature contour of the cross-flow heat exchanger" loading="lazy" onerror="this.parentElement.remove()"></div>
+      <div class="body">
+        <h3>Cross-Flow Air-to-Air Heat Exchanger</h3>
+        <p class="when">Graduation project · YU-COOP industry partnership · ongoing</p>
+        <p>Team project analysing and designing a cross-flow air-to-air heat exchanger, with CFD simulations in ANSYS Fluent.</p>
+        <div class="tags"><span class="tag">ANSYS Fluent</span><span class="tag">CFD</span><span class="tag">Heat transfer</span></div>
+      </div>
+    </article>
+
+    <article class="project">
+      <div class="media"><img src="images/ev-charger.jpg" alt="22 kW EV charging station after commissioning" loading="lazy" onerror="this.parentElement.remove()"></div>
+      <div class="body">
+        <h3>EV Charging Station Commissioning</h3>
+        <p class="when">Desa Enerji internship · 2026</p>
+        <p>Commissioning of a 22 kW three-phase charger. Traced a connection failure from a suspected DNS problem to an SSL/port mismatch in the OCPP configuration.</p>
+        <div class="tags"><span class="tag">OCPP 1.6</span><span class="tag">Three-phase power</span><span class="tag">Networking</span></div>
+      </div>
+    </article>
+
+    <article class="project">
+      <div class="media"><img src="images/meka3d.jpg" alt="Multicolor 3D-printed figure by MeKa 3D" loading="lazy" onerror="this.parentElement.remove()"></div>
+      <div class="body">
+        <h3>MeKa 3D</h3>
+        <p class="when">Business · 3dmeka.com</p>
+        <p>Original figures sculpted in-house and printed in multiple colors without painting, sold through a custom storefront.</p>
+        <div class="tags"><span class="tag">FDM printing</span><span class="tag">3D modelling</span><span class="tag">E-commerce</span></div>
+      </div>
+      <div class="gallery">
+        <img src="images/meka3d-1.jpg" alt="MeKa 3D print" loading="lazy" onerror="this.remove()">
+        <img src="images/meka3d-2.jpg" alt="MeKa 3D print" loading="lazy" onerror="this.remove()">
+        <img src="images/meka3d-3.jpg" alt="MeKa 3D print" loading="lazy" onerror="this.remove()">
+      </div>
+    </article>
+
+    <article class="project">
+      <div class="media"><video src="images/ups.mp4" controls preload="metadata" onerror="this.parentElement.remove()"></video></div>
+      <div class="body">
+        <h3>Automatic-Switchover UPS</h3>
+        <p class="when">Personal project</p>
+        <p>Offline relay-based UPS that keeps a 3D printer running during outages, using a 12 V 9 Ah battery and an inverter, with DC-rail capacitors sized to bridge the relay transfer time.</p>
+        <div class="tags"><span class="tag">Power electronics</span><span class="tag">Relays</span><span class="tag">Batteries</span></div>
+      </div>
+    </article>
+
+    <article class="project">
+      <div class="body">
+        <h3>TeknoSerious</h3>
+        <p class="when">Blog · <a href="https://teknoserious.net">teknoserious.net</a></p>
+        <p>Turkish technology news blog with custom-built themes and an automated Python cover image pipeline.</p>
+        <div class="tags"><span class="tag">HTML/CSS/JS</span><span class="tag">Python</span><span class="tag">Writing</span></div>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="skills">
+    <div><h3>Energy</h3><p>Gas turbines, HRSG, cogeneration, electrical protection, EV charging</p></div>
+    <div><h3>Software</h3><p>ANSYS Fluent, Python, HTML/CSS/JavaScript, Git, slicers</p></div>
+    <div><h3>Making</h3><p>3D modelling, multicolor FDM printing, prototyping</p></div>
+    <div><h3>Languages</h3><p>Turkish (native), English (B2)</p></div>
+  </div>
+</section>
+
+</main>
+
+<footer id="contact">
+  <div class="wrap">
+    <p><a href="mailto:kavcakar@hotmail.com">kavcakar@hotmail.com</a> · İzmir, Türkiye</p>
+    <p>© 2026 Mustafa Emir Kavçakar</p>
+  </div>
+</footer>
+</body>
+</html>
