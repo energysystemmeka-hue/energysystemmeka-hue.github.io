@@ -5,164 +5,258 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Mustafa Emir Kavçakar | Energy Systems Engineering</title>
 <meta name="description" content="Portfolio of Mustafa Emir Kavçakar: energy systems engineering student working on cogeneration, EV charging, CFD and 3D printing.">
+<meta property="og:title" content="Mustafa Emir Kavçakar | Energy Systems Engineering">
+<meta property="og:description" content="Cogeneration, EV charging, CFD and 3D printing. Portfolio and CV.">
+<meta property="og:image" content="https://energysystemmeka-hue.github.io/profile.jpg">
+<meta property="og:url" content="https://energysystemmeka-hue.github.io/">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#07121c">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2307121c'/%3E%3Crect x='4' y='4' width='24' height='4' rx='2' fill='%23ff7a45'/%3E%3Crect x='4' y='24' width='24' height='4' rx='2' fill='%233fd6ee'/%3E%3Ctext x='16' y='21' font-family='Arial' font-weight='700' font-size='11' fill='white' text-anchor='middle'%3EMK%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75..125,400..800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
 :root{
-  --paper:#eef1ee; --ink:#18242c; --muted:#56656d; --line:#c9d1cd;
-  --hot:#c8431b; --cold:#1f6aa5; --card:#ffffff;
-}
-@media (prefers-color-scheme:dark){
-  :root{--paper:#141b20;--ink:#e6ecea;--muted:#9aaab1;--line:#2c3a42;--hot:#ef6a3e;--cold:#5aa3dc;--card:#1b242a}
+  --bg:#07121c; --panel:#0c1b28; --panel2:#10233a; --line:#1d3549;
+  --ink:#dcecf3; --muted:#86a1b2; --cyan:#3fd6ee; --hot:#ff7a45; --cold:#3fa2ff;
+  --cut:14px;
 }
 *{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{margin:0;background:var(--paper);color:var(--ink);font-family:Archivo,system-ui,sans-serif;font-size:17px;line-height:1.55}
-a{color:var(--cold)}
-a:focus-visible{outline:2px solid var(--hot);outline-offset:2px}
-.wrap{max-width:860px;margin:0 auto;padding:0 20px}
+html{scroll-behavior:smooth;background:var(--bg)}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Barlow,system-ui,sans-serif;font-size:17px;line-height:1.6;
+  background-image:radial-gradient(1200px 500px at 80% -10%,rgba(63,214,238,.10),transparent 60%);}
+a{color:var(--cyan);text-decoration-thickness:1px;text-underline-offset:3px}
+a:focus-visible,button:focus-visible,input:focus-visible{outline:2px solid var(--cyan);outline-offset:3px}
+.wrap{max-width:900px;margin:0 auto;padding:0 20px}
+h1,h2,h3,.btn,nav a,.lang button,.hx-eff,.tag,.when{font-family:"Chakra Petch",Barlow,sans-serif}
 
-/* the one bold element: a hot-to-cold cross-flow stripe */
-.flow{height:10px;background:
-  linear-gradient(90deg,var(--hot),transparent 70%),
-  linear-gradient(180deg,transparent,var(--cold));}
+.flow{height:3px;background:linear-gradient(90deg,var(--hot),var(--cyan) 55%,var(--cold));box-shadow:0 0 18px rgba(63,214,238,.6)}
 
-header{padding:56px 0 40px}
-h1{font-stretch:118%;font-weight:800;font-size:clamp(2.2rem,7vw,3.6rem);line-height:1.02;margin:0 0 14px;letter-spacing:-.01em}
-.role{font-size:1.15rem;color:var(--muted);margin:0 0 22px;max-width:60ch}
+/* hero with perspective floor grid */
+header{position:relative;padding:72px 0 92px;overflow:hidden;isolation:isolate}
+header::after{content:"";position:absolute;left:-50%;right:-50%;bottom:-40%;height:85%;z-index:-1;
+  background-image:linear-gradient(rgba(63,214,238,.28) 1px,transparent 1px),linear-gradient(90deg,rgba(63,214,238,.28) 1px,transparent 1px);
+  background-size:48px 48px;transform:perspective(420px) rotateX(62deg);transform-origin:top center;
+  -webkit-mask-image:linear-gradient(to top,#000 10%,transparent 85%);mask-image:linear-gradient(to top,#000 10%,transparent 85%)}
+.hero{display:grid;grid-template-columns:1fr auto;gap:40px;align-items:center}
+h1{font-weight:700;font-size:clamp(2.4rem,7.5vw,4.2rem);line-height:.98;margin:0 0 18px;letter-spacing:.01em;text-transform:uppercase;
+  text-shadow:0 0 28px rgba(63,214,238,.35)}
+.role{font-size:1.15rem;color:var(--muted);margin:0 0 26px;max-width:58ch}
 .links{display:flex;flex-wrap:wrap;gap:10px}
-.btn{display:inline-block;padding:9px 16px;border:1.5px solid var(--ink);border-radius:999px;color:var(--ink);text-decoration:none;font-weight:600;font-size:.95rem}
-.btn.primary{background:var(--ink);color:var(--paper)}
+.btn{display:inline-block;padding:9px 18px;border:1px solid var(--line);color:var(--ink);text-decoration:none;font-weight:600;font-size:.95rem;
+  background:rgba(12,27,40,.7);clip-path:polygon(10px 0,100% 0,100% calc(100% - 10px),calc(100% - 10px) 100%,0 100%,0 10px);transition:background .15s,color .15s}
+.btn:hover{border-color:var(--cyan);color:var(--cyan)}
+.btn.primary{background:var(--cyan);color:#04121b;border-color:var(--cyan)}
+.btn.primary:hover{background:#7fe6f5;color:#04121b}
+.portrait{width:210px;height:auto;aspect-ratio:4/5;object-fit:cover;display:block;
+  clip-path:polygon(var(--cut) 0,100% 0,100% calc(100% - var(--cut)),calc(100% - var(--cut)) 100%,0 100%,0 var(--cut));
+  filter:saturate(.95) contrast(1.03)}
+.frame{position:relative;padding:8px}
+.frame::before,.frame::after{content:"";position:absolute;width:34px;height:34px;border:2px solid var(--cyan);filter:drop-shadow(0 0 6px rgba(63,214,238,.7))}
+.frame::before{top:0;left:0;border-right:0;border-bottom:0}
+.frame::after{bottom:0;right:0;border-left:0;border-top:0}
+@media (max-width:640px){.hero{grid-template-columns:1fr;gap:24px}.frame{order:-1;width:fit-content}.portrait{width:150px}header{padding:40px 0 64px}}
 
-nav{position:sticky;top:0;background:var(--paper);border-bottom:1px solid var(--line);z-index:5}
-nav .wrap{display:flex;gap:20px;overflow-x:auto;padding-top:12px;padding-bottom:12px}
+nav{position:sticky;top:0;z-index:5;background:rgba(7,18,28,.82);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;gap:22px;padding-top:11px;padding-bottom:11px}
+.navlinks{display:flex;gap:22px;overflow-x:auto;scrollbar-width:none;min-width:0}
 nav a{color:var(--muted);text-decoration:none;font-weight:600;white-space:nowrap;font-size:.95rem}
-nav a:hover{color:var(--ink)}
+nav a:hover{color:var(--cyan)}
 
-section{padding:44px 0 8px}
-h2{font-stretch:110%;font-size:1.6rem;margin:0 0 20px;font-weight:750}
-h3{font-size:1.1rem;margin:0 0 2px}
-.when{color:var(--muted);font-size:.93rem;margin:0 0 10px}
-ul{padding-left:20px;margin:8px 0 0}
-li{margin:4px 0}
+section{padding:56px 0 8px}
+h2{font-size:1.7rem;margin:0 0 22px;font-weight:700;letter-spacing:.02em}
+h2::before{content:"// ";color:var(--cyan)}
+h3{font-size:1.12rem;margin:0 0 2px;font-weight:600}
+.when{color:var(--cyan);opacity:.85;font-size:.9rem;margin:0 0 10px;letter-spacing:.02em}
+.when a{color:inherit}
+ul{padding-left:0;margin:8px 0 0;list-style:none}
+li{margin:6px 0;padding-left:20px;position:relative}
+li::before{content:"";position:absolute;left:2px;top:.72em;width:8px;height:2px;background:var(--cyan)}
 
-.entry{padding:18px 0 22px;border-top:1px solid var(--line)}
-.entry:first-of-type{border-top:0;padding-top:0}
+.entry{position:relative;padding:4px 0 26px 24px;border-left:1px solid var(--line);margin-left:6px}
+.entry::before{content:"";position:absolute;left:-5px;top:9px;width:9px;height:9px;background:var(--bg);border:2px solid var(--cyan);transform:rotate(45deg)}
+.entry:last-child{padding-bottom:6px}
 
-.projects{display:grid;gap:22px}
-.project{background:var(--card);border-radius:14px;overflow:hidden;border:1px solid var(--line)}
-.project .media img,.project .media video{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;background:var(--line)}
-.project .media iframe{display:block;width:100%;aspect-ratio:16/9;border:0}
-.project .body{padding:18px 20px 20px}
-.tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
-.tag{font-size:.82rem;padding:3px 10px;border-radius:999px;background:var(--paper);color:var(--muted)}
-.gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:8px;padding:0 20px 20px}
-.gallery img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:8px}
+.projects{display:grid;gap:26px}
+.project{background:linear-gradient(180deg,var(--panel2),var(--panel));border:1px solid var(--line);overflow:hidden;
+  clip-path:polygon(var(--cut) 0,100% 0,100% calc(100% - var(--cut)),calc(100% - var(--cut)) 100%,0 100%,0 var(--cut));transition:border-color .2s}
+.project:hover{border-color:#2d5470}
+.project .media img{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;background:var(--panel)}
+.project .media img.contain{object-fit:contain;background:var(--panel)}
+.project .media img.tall{aspect-ratio:4/3;object-position:center 40%}
+.project .body{padding:20px 22px 22px}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:14px}
+.tag{font-size:.8rem;padding:2px 10px;border:1px solid rgba(63,214,238,.35);color:var(--cyan);background:rgba(63,214,238,.06)}
+.note{font-size:.84rem;color:var(--muted);margin:12px 0 0}
+.gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:8px;padding:0 22px 22px}
+.gallery img{width:100%;aspect-ratio:3/4;object-fit:cover;border:1px solid var(--line)}
 
-.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px}
-.skills p{margin:4px 0 0;color:var(--muted)}
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px}
+.skills>div{padding:16px 18px;border:1px solid var(--line);background:var(--panel)}
+.skills h3{color:var(--cyan);font-size:1rem}
+.skills p{margin:6px 0 0;color:var(--muted)}
 
-footer{margin-top:56px;padding:28px 0 40px;border-top:1px solid var(--line);color:var(--muted);font-size:.92rem}
-@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+.lang{margin-left:auto;display:flex;gap:2px;border:1px solid var(--line);padding:2px;flex-shrink:0}
+.lang button{font-size:.8rem;font-weight:700;border:0;background:none;color:var(--muted);padding:3px 10px;cursor:pointer}
+.lang button[aria-pressed="true"]{background:var(--cyan);color:#04121b}
+
+.hx{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);gap:22px;padding:22px;border-bottom:1px solid var(--line);
+  background-image:linear-gradient(rgba(63,214,238,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(63,214,238,.05) 1px,transparent 1px);background-size:24px 24px}
+.hx-plot{position:relative;padding:0 0 22px 22px}
+.hx canvas{display:block;width:100%;aspect-ratio:1;border:1px solid var(--line);box-shadow:0 0 30px rgba(63,214,238,.12)}
+.hx-ax{position:absolute;font-size:.78rem;font-weight:600;font-family:"Chakra Petch",sans-serif}
+.hx-ax.x{left:22px;bottom:0;color:var(--hot)}
+.hx-ax.y{left:0;bottom:22px;color:var(--cold);writing-mode:vertical-rl;transform:rotate(180deg)}
+.hx-ctrl label{display:block;font-size:.88rem;font-weight:600;margin:0 0 2px}
+.hx-ctrl label output{float:right;font-variant-numeric:tabular-nums;color:var(--cyan);font-family:"Chakra Petch",sans-serif}
+.hx-ctrl input[type=range]{width:100%;accent-color:var(--cyan);margin:0 0 12px}
+.hx-out{display:grid;grid-template-columns:1fr auto;gap:3px 12px;font-size:.9rem;font-variant-numeric:tabular-nums;margin:6px 0 0;padding-top:10px;border-top:1px solid var(--line)}
+.hx-out dt{color:var(--muted)} .hx-out dd{margin:0;text-align:right;font-weight:600;font-family:"Chakra Petch",sans-serif}
+.hx-out .h{color:var(--hot)} .hx-out .c{color:var(--cold)}
+.hx-eff{font-size:2.6rem;font-weight:700;line-height:1;margin:12px 0 4px;color:var(--cyan);text-shadow:0 0 18px rgba(63,214,238,.5)}
+.hx-legend{height:6px;margin-top:10px;background:linear-gradient(90deg,#1f6aa5,#9fc3df,#f3e6d8,#ec9a76,#c8431b)}
+.hx-legend+div{display:flex;justify-content:space-between;font-size:.75rem;color:var(--muted)}
+@media (max-width:640px){.hx{grid-template-columns:1fr}}
+
+footer{margin-top:64px;padding:28px 0 44px;border-top:1px solid var(--line);color:var(--muted);font-size:.92rem}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn,.project{transition:none}}
 </style>
 </head>
 <body>
 <div class="flow" aria-hidden="true"></div>
 
-<header class="wrap">
+<header>
+<div class="wrap hero">
+  <div>
   <h1>Mustafa Emir<br>Kavçakar</h1>
-  <p class="role">Energy systems engineering student at Yaşar University. I work where power plants, power electronics and making things meet: cogeneration, EV charging, CFD and 3D printing.</p>
+  <p class="role" data-tr="Yaşar Üniversitesi Enerji Sistemleri Mühendisliği öğrencisiyim. Santrallerin, güç elektroniğinin ve üretmenin kesiştiği yerde çalışıyorum: kojenerasyon, elektrikli araç şarjı, CFD ve 3D baskı.">Energy systems engineering student at Yaşar University. I work where power plants, power electronics and making things meet: cogeneration, EV charging, CFD and 3D printing.</p>
   <div class="links">
-    <a class="btn primary" href="cv.pdf" download>Download CV</a>
-    <a class="btn" href="mailto:kavcakar@hotmail.com">Email</a>
-    <a class="btn" href="https://github.com/KULLANICIADI">GitHub</a>
+    <a class="btn primary" href="cv.pdf" download data-tr="CV indir">Download CV</a>
+    <a class="btn" href="mailto:kavcakar@hotmail.com" data-tr="E-posta">Email</a>
+    <a class="btn" href="https://github.com/energysystemmeka-hue">GitHub</a>
     <a class="btn" href="https://3dmeka.com">MeKa 3D</a>
   </div>
+  </div>
+  <div class="frame"><img class="portrait" src="profile.jpg" alt="Mustafa Emir Kavçakar" width="560" height="700"></div>
+</div>
 </header>
 
 <nav aria-label="Sections"><div class="wrap">
-  <a href="#education">Education</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#contact">Contact</a>
+  <div class="navlinks"><a href="#education" data-tr="Eğitim">Education</a><a href="#experience" data-tr="Deneyim">Experience</a><a href="#projects" data-tr="Projeler">Projects</a><a href="#skills" data-tr="Beceriler">Skills</a><a href="#contact" data-tr="İletişim">Contact</a></div>
+  <div class="lang" role="group" aria-label="Language"><button type="button" data-lang="en" aria-pressed="true">EN</button><button type="button" data-lang="tr" aria-pressed="false">TR</button></div>
 </div></nav>
 
 <main class="wrap">
 
 <section id="education">
-  <h2>Education</h2>
+  <h2 data-tr="Eğitim">Education</h2>
   <div class="entry">
-    <h3>B.Sc. Energy Systems Engineering</h3>
+    <h3 data-tr="Enerji Sistemleri Mühendisliği, Lisans">B.Sc. Energy Systems Engineering</h3>
     <p class="when">Yaşar University, İzmir · 2023 – 2026</p>
-    <p>Relevant courses: Power Conversion Systems, Engineering Project Management, Thermodynamics, Electromechanics, Generative AI for Engineers.</p>
+    <p data-tr="İlgili dersler: Güç Dönüşüm Sistemleri, Mühendislik Proje Yönetimi, Termodinamik, Elektromekanik, Mühendisler için Üretken Yapay Zeka.">Relevant courses: Power Conversion Systems, Engineering Project Management, Thermodynamics, Electromechanics, Generative AI for Engineers.</p>
   </div>
 </section>
 
 <section id="experience">
-  <h2>Experience</h2>
+  <h2 data-tr="Deneyim">Experience</h2>
   <div class="entry">
-    <h3>Engineering Intern, Desa Elektrik Üretim A.Ş. (Yaşar Holding)</h3>
-    <p class="when">Cogeneration plant, İzmir · Summer 2026</p>
+    <h3 data-tr="Stajyer Mühendis, Desa Elektrik Üretim A.Ş. (Yaşar Holding)">Engineering Intern, Desa Elektrik Üretim A.Ş. (Yaşar Holding)</h3>
+    <p class="when" data-tr="Kojenerasyon santrali, İzmir · Yaz 2026">Cogeneration plant, İzmir · Summer 2026</p>
     <ul>
-      <li>Supported operation of Solar Taurus 60 gas turbines and HRSG/boiler systems.</li>
-      <li>Took part in commissioning a 22 kW three-phase EV charging station and troubleshot OCPP 1.6 connectivity over LTE.</li>
-      <li>Participated in diesel generator testing and worked with MCCB panels, current transformers and field instruments (Siemens, Endress+Hauser).</li>
+      <li data-tr="Solar Taurus 60 gaz türbinleri ve HRSG/kazan sistemlerinin işletmesine destek verdim.">Supported operation of Solar Taurus 60 gas turbines and HRSG/boiler systems.</li>
+      <li data-tr="22 kW üç fazlı elektrikli araç şarj istasyonunun devreye alınmasında görev aldım, LTE üzerinden OCPP 1.6 bağlantı sorunlarını giderdim.">Took part in commissioning a 22 kW three-phase EV charging station and troubleshot OCPP 1.6 connectivity over LTE.</li>
+      <li data-tr="Dizel jeneratör testlerine katıldım; MCCB panoları, akım trafoları ve saha enstrümanları (Siemens, Endress+Hauser) ile çalıştım.">Participated in diesel generator testing and worked with MCCB panels, current transformers and field instruments (Siemens, Endress+Hauser).</li>
     </ul>
   </div>
   <div class="entry">
-    <h3>Founder, MeKa 3D</h3>
-    <p class="when">İzmir · Present</p>
+    <h3 data-tr="Kurucu, MeKa 3D">Founder, MeKa 3D</h3>
+    <p class="when" data-tr="İzmir · Devam ediyor">İzmir · Present</p>
     <ul>
-      <li>Sculpt and produce multicolor FDM-printed figures and objects.</li>
-      <li>Built the 3dmeka.com storefront with Shopier payments and Google Merchant Center listing.</li>
+      <li data-tr="Çok renkli FDM baskı figürler ve objeler modelleyip üretiyorum.">Sculpt and produce multicolor FDM-printed figures and objects.</li>
+      <li data-tr="Shopier ödemeli ve Google Merchant Center kayıtlı 3dmeka.com mağazasını kurdum.">Built the 3dmeka.com storefront with Shopier payments and Google Merchant Center listing.</li>
     </ul>
   </div>
 </section>
 
 <section id="projects">
-  <h2>Projects</h2>
+  <h2 data-tr="Projeler">Projects</h2>
   <div class="projects">
 
     <article class="project">
-      <div class="media"><img src="images/heat-exchanger.jpg" alt="CFD temperature contour of the cross-flow heat exchanger" loading="lazy" onerror="this.parentElement.remove()"></div>
+      <div class="hx" id="hx">
+        <div class="hx-plot">
+          <canvas width="80" height="80" role="img" aria-label="Wall temperature map of a cross-flow heat exchanger"></canvas>
+          <span class="hx-ax x" data-tr="Sıcak hava →">Hot air →</span>
+          <span class="hx-ax y" data-tr="Soğuk hava →">Cold air →</span>
+        </div>
+        <div class="hx-ctrl">
+          <label for="ntu">NTU <output id="ntuv">1.5</output></label>
+          <input id="ntu" type="range" min="0.2" max="5" step="0.1" value="1.5">
+          <label for="cr"><span data-tr="Kapasite oranı">Capacity ratio</span> C<sub>r</sub> <output id="crv">0.80</output></label>
+          <input id="cr" type="range" min="0.05" max="1" step="0.05" value="0.8">
+          <label for="thi"><span data-tr="Sıcak giriş">Hot inlet</span> <output id="thiv">80 °C</output></label>
+          <input id="thi" type="range" min="40" max="200" step="5" value="80">
+          <div class="hx-eff" id="eff">60%</div>
+          <div class="when"><span data-tr="Etkinlik ε (sayısal) · korelasyon:">Effectiveness ε (numerical) · correlation:</span> <span id="effc"></span></div>
+          <dl class="hx-out">
+            <dt data-tr="Sıcak çıkış">Hot outlet</dt><dd class="h" id="tho"></dd>
+            <dt data-tr="Soğuk çıkış">Cold outlet</dt><dd class="c" id="tco"></dd>
+          </dl>
+          <div class="hx-legend"></div><div><span>20 °C</span><span id="tmax">80 °C</span></div>
+        </div>
+      </div>
       <div class="body">
-        <h3>Cross-Flow Air-to-Air Heat Exchanger</h3>
-        <p class="when">Graduation project · YU-COOP industry partnership · ongoing</p>
-        <p>Team project analysing and designing a cross-flow air-to-air heat exchanger, with CFD simulations in ANSYS Fluent.</p>
-        <div class="tags"><span class="tag">ANSYS Fluent</span><span class="tag">CFD</span><span class="tag">Heat transfer</span></div>
+        <h3 data-tr="Çapraz Akışlı Havadan Havaya Isı Değiştirici">Cross-Flow Air-to-Air Heat Exchanger</h3>
+        <p class="when" data-tr="Bitirme projesi · YU-COOP sanayi iş birliği · devam ediyor">Graduation project · YU-COOP industry partnership · ongoing</p>
+        <p data-tr="Çapraz akışlı havadan havaya ısı değiştiricinin analizi ve tasarımı üzerine ekip projesi; ANSYS Fluent ile CFD simülasyonları.">Team project analysing and designing a cross-flow air-to-air heat exchanger, with CFD simulations in ANSYS Fluent.</p>
+        <div class="tags"><span class="tag">ANSYS Fluent</span><span class="tag">CFD</span><span class="tag" data-tr="Isı transferi">Heat transfer</span></div>
+        <p class="note" data-tr="Etkileşimli model: iki akışkanın da karışmadığı çapraz akış, sonlu farklar ile çözülüyor (soğuk akış C<sub>min</sub>, giriş 20 °C) ve Incropera korelasyonu (Denk. 11.32) ile karşılaştırılıyor. Kaydırıcıları oynat. Proje CFD sonuçları ileride eklenecek.">Interactive model: cross-flow with both streams unmixed, solved by finite differences in your browser (cold stream is C<sub>min</sub>, inlet 20 °C) and checked against the Incropera correlation (Eq. 11.32). Move the sliders. Project CFD results will be added later.</p>
       </div>
     </article>
 
     <article class="project">
-      <div class="media"><img src="images/ev-charger.jpg" alt="22 kW EV charging station after commissioning" loading="lazy" onerror="this.parentElement.remove()"></div>
+      <div class="media"><img class="contain" src="ev-charger.jpg" alt="Three-phase 400 V waveforms and the 22 kW power calculation" loading="lazy"></div>
       <div class="body">
-        <h3>EV Charging Station Commissioning</h3>
-        <p class="when">Desa Enerji internship · 2026</p>
-        <p>Commissioning of a 22 kW three-phase charger. Traced a connection failure from a suspected DNS problem to an SSL/port mismatch in the OCPP configuration.</p>
-        <div class="tags"><span class="tag">OCPP 1.6</span><span class="tag">Three-phase power</span><span class="tag">Networking</span></div>
+        <h3 data-tr="Elektrikli Araç Şarj İstasyonu Devreye Alma">EV Charging Station Commissioning</h3>
+        <p class="when" data-tr="Desa Enerji stajı · 2026">Desa Enerji internship · 2026</p>
+        <p data-tr="22 kW üç fazlı şarj cihazının devreye alınması. Bağlantı hatasını, DNS şüphesinden OCPP ayarlarındaki SSL/port uyumsuzluğuna kadar izleyip buldum.">Commissioning of a 22 kW three-phase charger. Traced a connection failure from a suspected DNS problem to an SSL/port mismatch in the OCPP configuration.</p>
+        <div class="tags"><span class="tag">OCPP 1.6</span><span class="tag" data-tr="Üç fazlı güç">Three-phase power</span><span class="tag" data-tr="Ağ">Networking</span></div>
+        <p class="note" data-tr="Şekil: üç fazlı besleme ve nominal güç kontrolü, P = √3 · 400 V · 32 A · cos φ ≈ 22 kW.">Figure: three-phase supply and the rated power check, P = √3 · 400 V · 32 A · cos φ ≈ 22 kW.</p>
       </div>
     </article>
 
     <article class="project">
-      <div class="media"><img src="images/meka3d.jpg" alt="Multicolor 3D-printed figure by MeKa 3D" loading="lazy" onerror="this.parentElement.remove()"></div>
+      <div class="media"><img class="tall" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjG7A9P68fIV-davWsszoQVzJQhTF1_xgXj7RjdcYG4eLK6Kb1sOGUjllxn1-RAW5t0r_l0mMu7l1yNwbF93H-uUyOSIlQAXJkK2AdLJarE23q53dMfDNqVoWRpPFAGR2y96jAUoPuiys3uRwhq25MnNmiTHq5vaoL3b-ATc18hVHyc6ZXM_kNa3MUTLthW/s1200/MVIMG_20260506_121043.jpg" alt="Organic textured vase with Voronoi cells, 3D printed by MeKa 3D" loading="lazy"></div>
       <div class="body">
         <h3>MeKa 3D</h3>
-        <p class="when">Business · 3dmeka.com</p>
-        <p>Original figures sculpted in-house and printed in multiple colors without painting, sold through a custom storefront.</p>
-        <div class="tags"><span class="tag">FDM printing</span><span class="tag">3D modelling</span><span class="tag">E-commerce</span></div>
+        <p class="when"><span data-tr="İşletme">Business</span> · <a href="https://3dmeka.com">3dmeka.com</a></p>
+        <p data-tr="Stüdyoda modellenen, boyasız çok renkli basılan özgün figürler ve objeler; özel bir mağaza üzerinden satılıyor. Görselde: dış yüzeyde spiral kıvrımlar, alt gövdede Voronoi hücre dokusu ve içte geometrik boşluklar olan organik dokulu vazo.">Original figures and objects modelled in-house and printed in multiple colors without painting, sold through a custom storefront. Shown: the organic textured vase, with spiral folds, a Voronoi cell pattern on the lower body and internal geometric cavities, designed and printed in the studio.</p>
+        <div class="tags"><span class="tag" data-tr="FDM baskı">FDM printing</span><span class="tag" data-tr="3D modelleme">3D modelling</span><span class="tag" data-tr="E-ticaret">E-commerce</span></div>
       </div>
       <div class="gallery">
-        <img src="images/meka3d-1.jpg" alt="MeKa 3D print" loading="lazy" onerror="this.remove()">
-        <img src="images/meka3d-2.jpg" alt="MeKa 3D print" loading="lazy" onerror="this.remove()">
-        <img src="images/meka3d-3.jpg" alt="MeKa 3D print" loading="lazy" onerror="this.remove()">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgw04xYPlkNvCe8VOja5Nh5_zZG_h5oawEdzDrZbA2qLh1I3ec1tepdcbFFUN_Y0wjrOEiJCuu3irv7l_jnOtNBA2wmaffeblPkgq7Kkfv81bs561XygJEcBqYIBcwfI7QTbEjROESwCNUjwrqWzH_6jo-uI8w7nDOEBcPWWCGRxieg3Dvsni7tYhx8PRDy/s600/MVIMG_20260506_121100.jpg" alt="Vase, side view" loading="lazy">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEit7KFifqROrdt5KY0QPWPSOvRelTkd7vpunURTye7wr2TE9cXIhyphenhyphenmWzuXhhEVHDcGj5eHfgu2284nwT2BTqDSo9n4W1bu3PmqfwxSwRXYSTdWiTB3a6tOdhcYjE-xOV3ZQRIUDiW-m1-JmIOvFCKPo2lF-sR52UjW-t4hwrBHUaJdMqhp6HIN8bnM7QhyF/s600/MVIMG_20260506_121023.jpg" alt="Vase, Voronoi texture detail" loading="lazy">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgIwvL8UrB6_NDZOEGG2Zs-v9rxjoaq-OeQf9HWc_G3nH-t-GkZFcn0pTupeJwDUYg6dFKvP7gYvE35d8URkZEkmnhl_c8wYVrq94Nn59fMf31f4CVnsbKmGvbGAdSluXJ_kt8kWHsVCEVOlBg_0sJ82WHSatqTDfSyb4Yug-ZGLlVoSC03AGKOZksM7KqJ/s600/MVIMG_20260506_121057.jpg" alt="Vase, top view" loading="lazy">
       </div>
     </article>
 
     <article class="project">
-      <div class="media"><video src="images/ups.mp4" controls preload="metadata" onerror="this.parentElement.remove()"></video></div>
+      <div class="media"><img class="contain" src="ups.jpg" alt="Timing diagram of the UPS relay transfer and DC rail hold-up" loading="lazy"></div>
       <div class="body">
-        <h3>Automatic-Switchover UPS</h3>
-        <p class="when">Personal project</p>
-        <p>Offline relay-based UPS that keeps a 3D printer running during outages, using a 12 V 9 Ah battery and an inverter, with DC-rail capacitors sized to bridge the relay transfer time.</p>
-        <div class="tags"><span class="tag">Power electronics</span><span class="tag">Relays</span><span class="tag">Batteries</span></div>
+        <h3 data-tr="Otomatik Geçişli UPS">Automatic-Switchover UPS</h3>
+        <p class="when" data-tr="Kişisel proje">Personal project</p>
+        <p data-tr="Elektrik kesintisinde 3D yazıcıyı çalışır tutan, röle tabanlı offline UPS: 12 V 9 Ah akü ve inverter, röle geçiş süresini köprüleyen DC hat kondansatörleri.">Offline relay-based UPS that keeps a 3D printer running during outages, using a 12 V 9 Ah battery and an inverter, with DC-rail capacitors sized to bridge the relay transfer time.</p>
+        <div class="tags"><span class="tag" data-tr="Güç elektroniği">Power electronics</span><span class="tag" data-tr="Röleler">Relays</span><span class="tag" data-tr="Aküler">Batteries</span></div>
+        <p class="note" data-tr="Şekil: temsili geçiş zamanlaması. Röle boşluğu boyunca kondansatör grubu DC hattı besleme kesilme sınırının üstünde tutuyor.">Figure: illustrative transfer timing. The capacitor bank keeps the DC rail above the supply dropout limit during the relay gap.</p>
+      </div>
+    </article>
+
+    <article class="project">
+      <div class="body">
+        <h3>Neon Savunma</h3>
+        <p class="when"><span data-tr="Tarayıcı oyunu">Browser game</span> · <a href="https://www.3dmeka.com/2026/07/game.html" data-tr="Oyna">Play it</a></p>
+        <p data-tr="3dmeka.com için yazılmış arcade oyunu: giderek zorlaşan boss dalgaları, güçlendiriciler ve son boss'u yenen oyuncuya indirim kuponu veren, kriptografik olarak doğrulanabilir bir kazanma kodu.">Arcade game built for 3dmeka.com with escalating boss waves, power-ups and a cryptographically verifiable win code that players trade for a discount coupon after beating the final boss.</p>
+        <div class="tags"><span class="tag">JavaScript</span><span class="tag">Canvas</span><span class="tag" data-tr="Pazarlama">Marketing</span></div>
       </div>
     </article>
 
@@ -170,8 +264,8 @@ footer{margin-top:56px;padding:28px 0 40px;border-top:1px solid var(--line);colo
       <div class="body">
         <h3>TeknoSerious</h3>
         <p class="when">Blog · <a href="https://teknoserious.net">teknoserious.net</a></p>
-        <p>Turkish technology news blog with custom-built themes and an automated Python cover image pipeline.</p>
-        <div class="tags"><span class="tag">HTML/CSS/JS</span><span class="tag">Python</span><span class="tag">Writing</span></div>
+        <p data-tr="Özel temaları ve otomatik Python kapak görseli üretim hattı olan Türkçe teknoloji haber blogu.">Turkish technology news blog with custom-built themes and an automated Python cover image pipeline.</p>
+        <div class="tags"><span class="tag">HTML/CSS/JS</span><span class="tag">Python</span><span class="tag" data-tr="Yazarlık">Writing</span></div>
       </div>
     </article>
 
@@ -179,12 +273,12 @@ footer{margin-top:56px;padding:28px 0 40px;border-top:1px solid var(--line);colo
 </section>
 
 <section id="skills">
-  <h2>Skills</h2>
+  <h2 data-tr="Beceriler">Skills</h2>
   <div class="skills">
-    <div><h3>Energy</h3><p>Gas turbines, HRSG, cogeneration, electrical protection, EV charging</p></div>
-    <div><h3>Software</h3><p>ANSYS Fluent, Python, HTML/CSS/JavaScript, Git, slicers</p></div>
-    <div><h3>Making</h3><p>3D modelling, multicolor FDM printing, prototyping</p></div>
-    <div><h3>Languages</h3><p>Turkish (native), English (B2)</p></div>
+    <div><h3 data-tr="Enerji">Energy</h3><p data-tr="Gaz türbinleri, HRSG, kojenerasyon, elektriksel koruma, EV şarj">Gas turbines, HRSG, cogeneration, electrical protection, EV charging</p></div>
+    <div><h3 data-tr="Yazılım">Software</h3><p data-tr="ANSYS Fluent, Python, HTML/CSS/JavaScript, Git, dilimleyiciler">ANSYS Fluent, Python, HTML/CSS/JavaScript, Git, slicers</p></div>
+    <div><h3 data-tr="Üretim">Making</h3><p data-tr="3D modelleme, çok renkli FDM baskı, prototipleme">3D modelling, multicolor FDM printing, prototyping</p></div>
+    <div><h3 data-tr="Diller">Languages</h3><p data-tr="Türkçe (ana dil), İngilizce (B2)">Turkish (native), English (B2)</p></div>
   </div>
 </section>
 
@@ -196,5 +290,56 @@ footer{margin-top:56px;padding:28px 0 40px;border-top:1px solid var(--line);colo
     <p>© 2026 Mustafa Emir Kavçakar</p>
   </div>
 </footer>
+<script>
+(function(){
+  /* language toggle */
+  var els=[].slice.call(document.querySelectorAll('[data-tr]'));
+  els.forEach(function(e){e.dataset.en=e.innerHTML;});
+  function setLang(l){
+    els.forEach(function(e){
+      e.innerHTML=l==='tr'?e.dataset.tr:e.dataset.en;
+    });
+    document.documentElement.lang=l;
+    document.querySelectorAll('.lang button').forEach(function(b){b.setAttribute('aria-pressed',b.dataset.lang===l);});
+    try{localStorage.setItem('lang',l);}catch(e){}
+  }
+  document.querySelectorAll('.lang button').forEach(function(b){b.addEventListener('click',function(){setLang(b.dataset.lang);});});
+  var saved=null; try{saved=localStorage.getItem('lang');}catch(e){}
+  if(saved==='tr') setLang('tr');
+
+  /* cross-flow heat exchanger, both streams unmixed, cold = Cmin */
+  var cv=document.querySelector('#hx canvas'); if(!cv) return;
+  var N=cv.width, ctx=cv.getContext('2d'), img=ctx.createImageData(N,N);
+  var stops=[[31,106,165],[159,195,223],[243,230,216],[236,154,118],[200,67,27]];
+  function col(t){t=Math.max(0,Math.min(1,t))*(stops.length-1);var i=Math.min(Math.floor(t),stops.length-2),f=t-i,a=stops[i],b=stops[i+1];return[a[0]+(b[0]-a[0])*f,a[1]+(b[1]-a[1])*f,a[2]+(b[2]-a[2])*f];}
+  var $=function(id){return document.getElementById(id);};
+  function run(){
+    var NTU=+$('ntu').value, Cr=+$('cr').value, Thi=+$('thi').value, Tci=20;
+    var a=NTU*Cr/N, b=NTU/N, d=1+a+b;
+    var Th=new Float32Array(N*N), Tc=new Float32Array(N*N);
+    for(var i=0;i<N;i++)for(var j=0;j<N;j++){
+      var th=j?Th[i*N+j-1]:Thi, tc=i?Tc[(i-1)*N+j]:Tci;
+      Th[i*N+j]=((1+b)*th+a*tc)/d; Tc[i*N+j]=(b*th+(1+a)*tc)/d;
+    }
+    var tho=0,tco=0;
+    for(var k=0;k<N;k++){tho+=Th[k*N+N-1];tco+=Tc[(N-1)*N+k];}
+    tho/=N; tco/=N;
+    for(i=0;i<N;i++)for(j=0;j<N;j++){
+      var w=(Th[i*N+j]+Tc[i*N+j])/2, c=col((w-Tci)/(Thi-Tci)), p=((N-1-i)*N+j)*4;
+      img.data[p]=c[0];img.data[p+1]=c[1];img.data[p+2]=c[2];img.data[p+3]=255;
+    }
+    ctx.putImageData(img,0,0);
+    var eps=(tco-Tci)/(Thi-Tci);
+    var epc=1-Math.exp(Math.pow(NTU,0.22)/Cr*(Math.exp(-Cr*Math.pow(NTU,0.78))-1));
+    $('ntuv').textContent=NTU.toFixed(1); $('crv').textContent=Cr.toFixed(2); $('thiv').textContent=Thi+' °C';
+    $('eff').textContent=Math.round(eps*100)+'%';
+    var ec=$('effc'); if(ec) ec.textContent=Math.round(epc*100)+'%';
+    $('tho').textContent=tho.toFixed(1)+' °C'; $('tco').textContent=tco.toFixed(1)+' °C';
+    $('tmax').textContent=Thi+' °C';
+  }
+  ['ntu','cr','thi'].forEach(function(id){$(id).addEventListener('input',run);});
+  run();
+})();
+</script>
 </body>
 </html>
