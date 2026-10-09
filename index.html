@@ -88,7 +88,9 @@ li::before{content:"";position:absolute;left:2px;top:.72em;width:8px;height:2px;
 .tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:14px}
 .tag{font-size:.8rem;padding:2px 10px;border:1px solid rgba(63,214,238,.35);color:var(--cyan);background:rgba(63,214,238,.06)}
 .note{font-size:.84rem;color:var(--muted);margin:12px 0 0}
-.gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:8px;padding:0 22px 22px}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;padding:0 22px 22px}
+.project .media img.shot{aspect-ratio:1418/566;object-position:left center}
+@media (max-width:640px){.project .media img.shot{aspect-ratio:4/3;object-position:62% center}}
 .gallery img{width:100%;aspect-ratio:3/4;object-fit:cover;border:1px solid var(--line)}
 
 .skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px}
@@ -226,12 +228,14 @@ footer{margin-top:64px;padding:28px 0 44px;border-top:1px solid var(--line);colo
     </article>
 
     <article class="project">
-      <div class="media"><img class="tall" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjG7A9P68fIV-davWsszoQVzJQhTF1_xgXj7RjdcYG4eLK6Kb1sOGUjllxn1-RAW5t0r_l0mMu7l1yNwbF93H-uUyOSIlQAXJkK2AdLJarE23q53dMfDNqVoWRpPFAGR2y96jAUoPuiys3uRwhq25MnNmiTHq5vaoL3b-ATc18hVHyc6ZXM_kNa3MUTLthW/s1200/MVIMG_20260506_121043.jpg" alt="Organic textured vase with Voronoi cells, 3D printed by MeKa 3D" loading="lazy"></div>
+      <div class="media"><a href="https://www.3dmeka.com/p/lamba-tasarlayici.html"><img src="design-tool.jpg" alt="MeKa 3D design tool: draw the body, pick a texture, set the size and see the price for a lamp, vase or pot" loading="lazy" class="shot"></a></div>
       <div class="body">
-        <h3>MeKa 3D</h3>
+        <h3 data-tr="MeKa 3D ve Tasarım Aracı">MeKa 3D &amp; Design Tool</h3>
         <p class="when"><span data-tr="İşletme">Business</span> · <a href="https://3dmeka.com">3dmeka.com</a></p>
-        <p data-tr="Stüdyoda modellenen, boyasız çok renkli basılan özgün figürler ve objeler; özel bir mağaza üzerinden satılıyor. Görselde: dış yüzeyde spiral kıvrımlar, alt gövdede Voronoi hücre dokusu ve içte geometrik boşluklar olan organik dokulu vazo.">Original figures and objects modelled in-house and printed in multiple colors without painting, sold through a custom storefront. Shown: the organic textured vase, with spiral folds, a Voronoi cell pattern on the lower body and internal geometric cavities, designed and printed in the studio.</p>
-        <div class="tags"><span class="tag" data-tr="FDM baskı">FDM printing</span><span class="tag" data-tr="3D modelleme">3D modelling</span><span class="tag" data-tr="E-ticaret">E-commerce</span></div>
+        <p data-tr="Müşterinin kendi lamba, vazo ya da saksısını tasarladığı web aracı: gövdeyi çiz, dokuyu seç, ölçüyü ayarla, parçayı ekranda döndür ve fiyatını anında gör. 34 hazır model, fotoğraf baskı ve odada görme seçenekleri var. Siparişler stüdyoda çok renkli FDM ile basılıyor.">A web tool where customers design their own lamp, vase or pot: draw the body, pick a texture, set the size, rotate the part on screen and see the price instantly. Includes 34 ready-made models, photo printing and an in-room preview. Orders are printed in the studio with multicolor FDM.</p>
+        <p><a class="btn primary" href="https://www.3dmeka.com/p/lamba-tasarlayici.html" data-tr="Tasarım aracını dene">Try the design tool</a></p>
+        <p class="note" data-tr="Galeri: araçla tasarlanan türden bir ürün, Voronoi dokulu organik vazo.">Gallery: an example product, the organic vase with a Voronoi texture.</p>
+        <div class="tags"><span class="tag" data-tr="FDM baskı">FDM printing</span><span class="tag" data-tr="3D modelleme">3D modelling</span><span class="tag" data-tr="E-ticaret">E-commerce</span><span class="tag" data-tr="Ürün yapılandırıcı">Product configurator</span></div>
       </div>
       <div class="gallery">
         <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgw04xYPlkNvCe8VOja5Nh5_zZG_h5oawEdzDrZbA2qLh1I3ec1tepdcbFFUN_Y0wjrOEiJCuu3irv7l_jnOtNBA2wmaffeblPkgq7Kkfv81bs561XygJEcBqYIBcwfI7QTbEjROESwCNUjwrqWzH_6jo-uI8w7nDOEBcPWWCGRxieg3Dvsni7tYhx8PRDy/s600/MVIMG_20260506_121100.jpg" alt="Vase, side view" loading="lazy">
